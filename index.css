@@ -114,47 +114,36 @@ li {
   }
 
   #header-container:hover .name-center {
-    width: 100px;
+    width: 10%;
   }
 
   .name-container {
     display: flex;
     justify-content: left;
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.6rem;
+    font-family: "fakt-nor";
+    font-size: 2.7rem;
+    letter-spacing: -1px;
   }
 
   .name-left {
-    font-family: "fakt-nor";
-    font-size: 2.4rem;
-    letter-spacing: -1px;
   }
 
   .name-center {
     display: block;
     margin-left: 0.2rem;
     margin-right: -0.2rem;
-    margin-bottom: 0.85rem;
+    margin-bottom: 1rem;
     border-bottom: 3px solid;
-    font-family: "fakt-med";
-    font-size: 1rem;
-    line-height: 1rem;
-    letter-spacing: 0px;
-    width: 100%;
+    width: 55%;
     transition: width 4s;
   }
 
   .name-right {
-    font-family: "fakt-nor";
-    font-size: 2.4rem;
-    letter-spacing: -1px;
   }
 
   .targetDiv {
     display: block;
-  }
-
-  #div4 {
-    display: none;
   }
 
   .navigation-menu {
@@ -189,6 +178,7 @@ li {
 
   .button {
     background: none;
+    margin: 2px;
     padding: 4px 12px 3px 12px;
     border: 2px solid;
     border-radius: 5rem;
@@ -207,20 +197,8 @@ li {
     outline: 0;
   }
 
-  .button-footer {
-    background: none;
-    padding: 4px 14px 3px 14px;
-    border: 2px solid;
-    border-radius: 5rem;
-    color: white;
-    border-color: white;
-    font-family: "fakt-med";
-    font-size: 1.2rem;
-  }
+  #radio {
 
-  .button-footer:hover {
-    color: #dcdcdc;
-    border-color: #dcdcdc;
   }
 
   #margin-header {
@@ -279,7 +257,7 @@ li {
 
   figcaption span {
     padding-top: 0.6rem;
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.6rem;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     font-family: "fakt-nor";
@@ -415,10 +393,6 @@ li {
     grid-area: footer-image;
   }
 
-  #footer-figure {
-    border: 2px solid;
-  }
-
   #footer-socials {
     display: flex;
     flex-wrap: wrap;
@@ -427,6 +401,26 @@ li {
     padding-top: 1.2rem;
     border-top: 2px solid;
     grid-area: footer-socials;
+  }
+
+  #footer-figure {
+    border: 2px solid;
+  }
+
+  .button-footer {
+    background: none;
+    padding: 4px 12px 3px 12px;
+    border: 2px solid;
+    border-radius: 5rem;
+    font-family: "fakt-med";
+    font-size: 1rem;;
+    color: white;
+    border-color: white;
+  }
+
+  .button-footer:hover {
+    color: #dcdcdc;
+    border-color: #dcdcdc;
   }
 }
 
@@ -495,6 +489,10 @@ li {
     column-count: 2;
   }
 
+  .name-container {
+    width: 50%;
+  }
+
   .follow-container {
     display: flex;
     padding: 3rem;
@@ -525,11 +523,14 @@ li {
       "footer-contact footer-adress footer-image footer-image"
       "footer-socials footer-socials footer-image footer-image"
   }
-}
 
-@media only screen and (min-width: 960px) {
-  .name-container {
-    width: 50%;
+  .button-footer {
+    background: none;
+    padding: 4px 14px 3px 14px;
+    border: 2px solid;
+    border-radius: 5rem;
+    font-family: "fakt-med";
+    font-size: 1.2rem;
   }
 }
 
