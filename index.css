@@ -1,0 +1,555 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "fakt-nor";
+  src: url("fonts/FaktPro-Normal.woff");
+  src: url("fonts/FaktPro-Normal.woff2");
+}
+
+@font-face {
+  font-family: "fakt-nor-ita";
+  src: url("fonts/FaktPro-NormalItalic.woff");
+  src: url("fonts/FaktPro-NormalItalic.woff2");
+}
+
+@font-face {
+  font-family: "fakt-med";
+  src: url("fonts/FaktPro-Medium.woff");
+  src: url("fonts/FaktPro-Medium.woff2");
+}
+
+@font-face {
+  font-family: "fakt-med-ita";
+  src: url("fonts/FaktPro-MediumItalic.woff");
+  src: url("fonts/FaktPro-MediumItalic.woff2");
+}
+
+@font-face {
+  font-family: "times-rom";
+  src: url("fonts/TimesNewRomanMTStd.woff");
+  src: url("fonts/TimesNewRomanMTStd.woff2");
+}
+
+@font-face {
+  font-family: "times-rom-ita";
+  src: url("fonts/TimesNewRomanMTStd-Italic.woff");
+  src: url("fonts/TimesNewRomanMTStd-Italic.woff2");
+}
+
+@font-face {
+  font-family: "times-con";
+  src: url("fonts/TimesNewRomanMTStd-Cond.woff");
+  src: url("fonts/TimesNewRomanMTStd-Cond.woff2");
+}
+
+@font-face {
+  font-family: "times-con-ita";
+  src: url("fonts/TimesNewRomanMTStd-CondIt.woff");
+  src: url("fonts/TimesNewRomanMTStd-CondIt.woff2");
+}
+
+@font-face {
+  font-family: "times-bol-con";
+  src: url("fonts/TTimesNewRomanMTStd-BoldCond.woff");
+  src: url("fonts/TimesNewRomanMTStd-BoldCond.woff2");
+}
+
+@font-face {
+  font-family: "times-sem";
+  src: url("fonts/TimesLTStd-Semibold.woff");
+  src: url("fonts/TimesLTStd-Semibold.woff");
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+li {
+  list-style: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 1px) {
+  .location-container {
+    background: white;
+    color: black;
+  }
+
+  .location-content {
+    font-family: "fakt-med";
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 0.4rem;
+    padding-bottom: 0.3rem;
+  }
+
+  #header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0rem;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 0.6rem;
+    padding-bottom: 0.9rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  #header-container:hover .name-center {
+    width: 100px;
+  }
+
+  .name-container {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 0.4rem;
+  }
+
+  .name-left {
+    font-family: "fakt-nor";
+    font-size: 2.4rem;
+    letter-spacing: -1px;
+  }
+
+  .name-center {
+    display: block;
+    margin-left: 0.5rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.85rem;
+    border-bottom: 3px solid;
+    font-family: "fakt-med";
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0px;
+    width: 100%;
+    transition: width 4s;
+  }
+
+  .name-right {
+    font-family: "fakt-nor";
+    font-size: 2.4rem;
+    letter-spacing: -1px;
+    margin-left: -0.6rem;
+  }
+
+  .targetDiv {
+    display: block;
+  }
+
+  #div4 {
+    display: none;
+  }
+
+  .navigation-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: "fakt-med";
+    font-size: 1.2rem;
+  }
+
+  .navigation-item {
+    text-align: left;
+    padding-top: 0.6rem;
+    padding-bottom: 1.8rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    font-family: "fakt-nor";
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  i.navigation-item {
+    font-family: "times-rom-ita";
+  }
+
+  .navigation-image {
+    background: none;
+    width: 50%;
+    mix-blend-mode: multiply;
+  }
+
+  button {
+    background: none;
+    padding: 4px 14px 3px 14px;
+    border: 2px solid;
+    border-radius: 5rem;
+    font-family: "fakt-med";
+    font-size: 1.2rem;
+  }
+
+  button:hover {
+    color: white;
+    border-color: white;
+  }
+
+  button:focus {
+    color: white;
+    border-color: white;
+    outline: 0;
+  }
+
+  #margin-left {
+    margin-left: 0.8rem;
+  }
+
+  #margin-right {
+    margin-right: 0.8rem;
+  }
+
+  #margin-bottom {
+    margin-bottom: 5rem;
+  }
+
+  .main-container {
+    display: grid;
+    height: auto;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 1.2rem;
+    grid-gap: 4px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3"
+      "project4"
+      "project5"
+      "project6"
+      "project7"
+      "project8"
+      "project9"
+      "project10"
+      "project11"
+      "project12"
+  }
+
+  .figure {
+    position: relative;
+    background: none;
+    width: 100%;
+  }
+
+  .figure img.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .1s;
+  }
+
+  .figure:hover img.image-hover {
+    opacity: 1;
+  }
+
+  figcaption {
+    line-height: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  figcaption span {
+    padding-top: 0.6rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    font-family: "fakt-nor";
+    font-size: 1.2rem;
+  }
+
+  nav {
+    background: none;
+  }
+
+  #project1 {
+    background: none;
+    grid-area: project1;
+  }
+
+  #project2 {
+    background: none;
+    grid-area: project2;
+  }
+
+  #project3 {
+    background: none;
+    grid-area: project3;
+  }
+
+  #project4 {
+    background: none;
+    grid-area: project4;
+  }
+
+  #project5 {
+    background: none;
+    grid-area: project5;
+  }
+
+  #project6 {
+    background: none;
+    grid-area: project6;
+  }
+
+  #project7 {
+    background: none;
+    grid-area: project7;
+  }
+
+  #project8 {
+    background: none;
+    grid-area: project8;
+  }
+
+  #project9 {
+    background: none;
+    grid-area: project9;
+  }
+
+  #project10 {
+    background: none;
+    grid-area: project10;
+  }
+
+  #project11 {
+    background: none;
+    grid-area: project11;
+  }
+
+  #project12 {
+    background: none;
+    grid-area: project12;
+  }
+
+  .follow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: black;
+    padding: 2.4rem;
+    padding-top: 3rem;
+  }
+
+  .follow-button {
+    font-family: "times-con";
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .follow-button:hover {
+    color: #dcdcdc;
+  }
+
+  footer {
+    background: black;
+    color: white;
+    font-family: "fakt-nor";
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .footer-container {
+    display: grid;
+    align-self: flex-start;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    padding-top: 3.6rem;
+    padding-bottom: 2.4rem;
+    grid-gap: 1.2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto auto;
+    grid-template-areas:
+      "footer-content"
+      "footer-image"
+      "footer-adress"
+      "footer-contact"
+      "footer-socials"
+  }
+
+  #footer-content {
+    grid-area: footer-content;
+  }
+
+  #footer-adress {
+    grid-area: footer-adress;
+  }
+
+  #footer-contact button {
+    text-align: right;
+    background: none;
+    display: block;
+    width: 100%;
+    border: 0px;
+    border-style: solid;
+    outline: none;
+    font-family: "fakt-nor";
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: white;
+    grid-area: footer-contact;
+  }
+
+  #footer-image {
+    padding-left: 10rem;
+    grid-area: footer-image;
+  }
+
+  #footer-figure {
+    border: 2px solid;
+  }
+
+  #footer-socials {
+    display: flex;
+    justify-content: left;
+    background-color: none;
+    padding-top: 1.2rem;
+    border-top: 2px solid;
+    grid-area: footer-socials;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  #header-container {
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 1.8rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+
+  .main-container {
+    margin-left: 4%;
+    margin-right: 4%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "project1 project2"
+      "project3 project4"
+      "project5 project6"
+      "project7 project8"
+      "project9 project10"
+      "project11 project12"
+  }
+
+  .navigation-item {
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 0.6rem;
+    padding-bottom: 1.8rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    font-family: "fakt-nor";
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+
+  .targetDiv {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+
+
+  .name-container {
+    padding-bottom: 0rem;
+  }
+
+  .name-right {
+    display: block;
+  }
+
+  .navigation-item {
+    column-count: 2;
+  }
+
+  button {
+    background: none;
+    padding: 4px 14px 3px 14px;
+    border: 2px solid;
+    border-radius: 5rem;
+    font-family: "fakt-med";
+    font-size: 1.2rem;
+  }
+
+  .follow-container {
+    display: flex;
+    padding: 3rem;
+    padding-top: 3.6rem;
+  }
+
+  .follow-button {
+    font-family: "times-con";
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  .footer-container {
+    display: grid;
+    align-self: flex-start;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    padding-top: 3.6rem;
+    padding-bottom: 2.4rem;
+    grid-gap: 1.2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "footer-content footer-content footer-image footer-image"
+      "footer-contact footer-adress footer-image footer-image"
+      "footer-socials footer-socials footer-image footer-image"
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .name-container {
+    width: 53%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .main-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "project1 project2 project4"
+      "project3 project5 project6"
+  }
+
+  .navigation-item {
+    column-count: 3;
+  }
+}

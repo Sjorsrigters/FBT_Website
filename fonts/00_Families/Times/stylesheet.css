@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Times New Roman MT Std';
+    src: url('TimesNewRomanMTStd-BoldIt.woff2') format('woff2'),
+        url('TimesNewRomanMTStd-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman MT Std';
+    src: url('TimesNewRomanMTStd.woff2') format('woff2'),
+        url('TimesNewRomanMTStd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman MT Std';
+    src: url('TimesNewRomanMTStd-BoldCond.woff2') format('woff2'),
+        url('TimesNewRomanMTStd-BoldCond.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman MT Std';
+    src: url('TimesNewRomanMTStd-CondIt.woff2') format('woff2'),
+        url('TimesNewRomanMTStd-CondIt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman MT Std';
+    src: url('TimesNewRomanMTStd-Cond.woff2') format('woff2'),
+        url('TimesNewRomanMTStd-Cond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman MT Std';
+    src: url('TimesNewRomanMTStd-Bold.woff2') format('woff2'),
+        url('TimesNewRomanMTStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman MT Std';
+    src: url('TimesNewRomanMTStd-Italic.woff2') format('woff2'),
+        url('TimesNewRomanMTStd-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
