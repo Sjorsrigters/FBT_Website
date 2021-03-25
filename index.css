@@ -107,27 +107,24 @@ li {
     margin-bottom: 0rem;
     margin-left: 0%;
     margin-right: 0%;
-    padding-top: 1.8rem;
+    padding-top: 1.2rem;
     padding-bottom: 0.9rem;
     padding-left: 0.9rem;
     padding-right: 0.9rem;
   }
 
   #header-container:hover .name-center {
-    width: 10%;
+    /* width: 10%; */
   }
 
   .name-container {
     display: flex;
     justify-content: left;
-    padding-bottom: 0.6rem;
     font-family: "fakt-nor";
     font-size: 2.7rem;
-    letter-spacing: -1px;
   }
 
-  .name-left {
-  }
+  .name-left {}
 
   .name-center {
     display: block;
@@ -136,11 +133,10 @@ li {
     margin-bottom: 1rem;
     border-bottom: 3px solid;
     width: 55%;
-    transition: width 4s;
+    /* transition: width 4s; */
   }
 
-  .name-right {
-  }
+  .name-right {}
 
   .targetDiv {
     display: block;
@@ -179,7 +175,7 @@ li {
   .button {
     background: none;
     margin: 2px;
-    padding: 4px 12px 3px 12px;
+    padding: 5px 12px 3px 12px;
     border: 2px solid;
     border-radius: 5rem;
     font-family: "fakt-med";
@@ -197,17 +193,18 @@ li {
     outline: 0;
   }
 
-  #radio {
-
+  #button-margin-header {
+    margin-top: 0.6rem;
+    margin-right: 0.45rem;
   }
 
-  #margin-header {
-    margin-left: 0.4rem;
+  #button-radio {
+    display: none;
   }
 
-  #margin-footer {
-    margin-right: 0.4rem;
+  #button-margin-footer {
     margin-bottom: 0.6rem;
+    margin-right: 0.6rem;
   }
 
   .main-container {
@@ -370,11 +367,16 @@ li {
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr auto auto auto;
     grid-template-areas:
+      "footer-projects"
       "footer-content"
       "footer-image"
       "footer-contact"
       "footer-adress"
       "footer-socials"
+  }
+
+  #footer-content {
+    grid-area: footer-projects;
   }
 
   #footer-content {
@@ -396,7 +398,7 @@ li {
   #footer-socials {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: flex-start;
     background-color: none;
     padding-top: 1.2rem;
     border-top: 2px solid;
@@ -409,11 +411,12 @@ li {
 
   .button-footer {
     background: none;
-    padding: 4px 12px 3px 12px;
+    padding: 5px 12px 3px 12px;
     border: 2px solid;
     border-radius: 5rem;
     font-family: "fakt-med";
-    font-size: 1rem;;
+    font-size: 1rem;
+    ;
     color: white;
     border-color: white;
   }
@@ -421,6 +424,18 @@ li {
   .button-footer:hover {
     color: #dcdcdc;
     border-color: #dcdcdc;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .navigation-item {
+    font-family: "fakt-nor";
+    font-size: 1.2rem;
+  }
+
+  #button-radio {
+    display: block;
+    margin-top: 0.6rem;
   }
 }
 
@@ -468,9 +483,7 @@ li {
     text-align: center;
   }
 
-  .name-container {
-    padding-bottom: 0rem;
-  }
+  .name-container {}
 
   .name-right {
     display: block;
@@ -478,7 +491,7 @@ li {
 
   .button {
     background: none;
-    padding: 4px 14px 3px 14px;
+    padding: 5px 14px 3px 14px;
     border: 2px solid;
     border-radius: 5rem;
     font-family: "fakt-med";
@@ -517,16 +530,18 @@ li {
     padding-right: 0.6rem;
     grid-gap: 1.2rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto auto 1fr auto;
     grid-template-areas:
-      "footer-content footer-content footer-image footer-image"
-      "footer-contact footer-adress footer-image footer-image"
-      "footer-socials footer-socials footer-image footer-image"
+      "footer-content footer-content footer-projects footer-projects"
+      "footer-image footer-image footer-projects footer-projects"
+      "footer-contact footer-contact footer-projects footer-projects"
+      "footer-adress footer-adress footer-projects footer-projects"
+      "footer-socials footer-socials footer-socials footer-socials"
   }
 
   .button-footer {
     background: none;
-    padding: 4px 14px 3px 14px;
+    padding: 5px 14px 3px 14px;
     border: 2px solid;
     border-radius: 5rem;
     font-family: "fakt-med";
