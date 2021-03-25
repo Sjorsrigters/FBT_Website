@@ -92,7 +92,7 @@ li {
     color: black;
   }
 
-  .location-content {
+  .location-text {
     font-family: "fakt-med";
     font-size: 0.8rem;
     text-align: center;
@@ -122,6 +122,7 @@ li {
     justify-content: left;
     font-family: "fakt-nor";
     font-size: 2.7rem;
+    letter-spacing: -1px;
   }
 
   .name-left {}
@@ -151,8 +152,7 @@ li {
     font-size: 1.2rem;
   }
 
-  .navigation-item {
-    text-align: left;
+  .navigation-container {
     padding-top: 0.6rem;
     padding-bottom: 1.8rem;
     padding-left: 1.2rem;
@@ -160,9 +160,12 @@ li {
     font-family: "fakt-nor";
     font-size: 1rem;
     line-height: 1.2rem;
+    text-align: left;
   }
 
-  i.navigation-item {
+  .navigation-text {}
+
+  i.navigation-text {
     font-family: "times-rom-ita";
   }
 
@@ -170,6 +173,30 @@ li {
     background: none;
     width: 50%;
     mix-blend-mode: multiply;
+  }
+
+  .dummy-container {
+    display: grid;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    margin-bottom: 1.2rem;
+    grid-template-columns: repeat(50, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 1.2rem;
+  }
+
+  #dummy1 {
+    align-items: flex-start;
+    grid-column: 1 / 20;
+  }
+
+  #dummy2 {
+    align-items: flex-start;
+    grid-column: 25 / 40;
+  }
+
+  img {
+    width: 100%;
   }
 
   .button {
@@ -365,22 +392,22 @@ li {
     padding-right: 0.6rem;
     grid-gap: 1.2rem;
     grid-template-columns: 100%;
-    grid-template-rows: auto 1fr auto auto auto;
+    grid-template-rows: auto auto 1fr auto auto;
     grid-template-areas:
       "footer-projects"
-      "footer-content"
+      "footer-text"
       "footer-image"
       "footer-contact"
       "footer-adress"
       "footer-socials"
   }
 
-  #footer-content {
+  #footer-projects {
     grid-area: footer-projects;
   }
 
-  #footer-content {
-    grid-area: footer-content;
+  #footer-text {
+    grid-area: footer-text;
   }
 
   #footer-adress {
@@ -416,7 +443,6 @@ li {
     border-radius: 5rem;
     font-family: "fakt-med";
     font-size: 1rem;
-    ;
     color: white;
     border-color: white;
   }
@@ -428,9 +454,10 @@ li {
 }
 
 @media only screen and (min-width: 375px) {
-  .navigation-item {
+  .navigation-container {
     font-family: "fakt-nor";
     font-size: 1.2rem;
+    line-height: 1.4rem;
   }
 
   #button-radio {
@@ -451,6 +478,11 @@ li {
     padding-right: 0.6rem;
   }
 
+  .dummy-container {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
   .main-container {
     margin-left: 4%;
     margin-right: 4%;
@@ -465,16 +497,13 @@ li {
       "project11 project12"
   }
 
-  .navigation-item {
+  .navigation-container {
     margin-left: 4%;
     margin-right: 4%;
     padding-top: 0.6rem;
     padding-bottom: 1.8rem;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
-    font-family: "fakt-nor";
-    font-size: 1.2rem;
-    line-height: 1.4rem;
   }
 
   .targetDiv {
@@ -498,7 +527,7 @@ li {
     font-size: 1.2rem;
   }
 
-  .navigation-item {
+  .navigation-text {
     column-count: 2;
   }
 
@@ -530,13 +559,12 @@ li {
     padding-right: 0.6rem;
     grid-gap: 1.2rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
-      "footer-content footer-content footer-projects footer-projects"
-      "footer-image footer-image footer-projects footer-projects"
-      "footer-contact footer-contact footer-projects footer-projects"
-      "footer-adress footer-adress footer-projects footer-projects"
-      "footer-socials footer-socials footer-socials footer-socials"
+      "footer-text footer-text footer-image footer-image"
+      "footer-contact footer-contact footer-image footer-image"
+      "footer-adress footer-adress footer-image footer-image"
+      "footer-socials footer-socials footer-image footer-image"
   }
 
   .button-footer {
@@ -562,7 +590,7 @@ li {
       "project3 project5 project6"
   }
 
-  .navigation-item {
+  .navigation-text {
     column-count: 3;
   }
 }
