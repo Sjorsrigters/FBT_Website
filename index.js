@@ -18,7 +18,7 @@ $(document).ready(function() {
 });
 
 // $(document).ready(function() {
-// 			var colors = ["#aa5aff", "grey"];
+// 			var colors = ["#aa5aff", "#75fa4c"];
 // 			var rand = Math.floor(Math.random() * colors.length);
 // 			$('header').css("background-color", colors[rand]);
 //       $('footer').css("background-color", colors[rand]);

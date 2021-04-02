@@ -121,23 +121,21 @@ li {
     display: flex;
     justify-content: left;
     font-family: "fakt-nor";
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     letter-spacing: -1px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
   }
-
-  .name-left {}
 
   .name-center {
     display: block;
     margin-left: 0.2rem;
     margin-right: -0.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
     border-bottom: 3px solid;
-    width: 55%;
+    width: 100%;
     /* transition: width 4s; */
   }
-
-  .name-right {}
 
   .targetDiv {
     display: block;
@@ -157,13 +155,13 @@ li {
     padding-bottom: 1.8rem;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
-    font-family: "fakt-nor";
-    font-size: 1rem;
-    line-height: 1.2rem;
-    text-align: left;
   }
 
-  .navigation-text {}
+  .navigation-text {
+    font-family: "fakt-nor";
+    font-size: 1.2rem;
+    text-align: left;
+  }
 
   i.navigation-text {
     font-family: "times-rom-ita";
@@ -177,22 +175,96 @@ li {
 
   .dummy-container {
     display: grid;
-    margin-left: 0.6rem;
-    margin-right: 0.6rem;
-    margin-bottom: 1.2rem;
-    grid-template-columns: repeat(50, 1fr);
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 3vw;
+    grid-template-columns: repeat(92, 1vw);
     grid-template-rows: auto;
-    grid-row-gap: 1.2rem;
+  }
+
+  #margin-dummy {
+    height: 4vw;
   }
 
   #dummy1 {
     align-items: flex-start;
-    grid-column: 1 / 20;
+    grid-column: 1 / 30;
   }
 
   #dummy2 {
     align-items: flex-start;
-    grid-column: 25 / 40;
+    grid-column: 33 / 55;
+  }
+
+  #dummy3 {
+    align-items: flex-start;
+    grid-column: 66 / 97;
+  }
+
+  #dummy4 {
+    align-items: flex-start;
+    grid-column: 20 / 80;
+  }
+
+  #dummy5 {
+    align-items: flex-start;
+    grid-column: 1 / 24;
+  }
+
+  #dummy6 {
+    align-self: flex-end;
+    align-items: flex-start;
+    grid-column: 33 / 63;
+  }
+
+  #dummy7 {
+    align-items: flex-start;
+    grid-column: 48 / 91;
+  }
+
+  #dummy5 {
+    align-items: flex-start;
+    grid-column: 1 / 30;
+  }
+
+  #dummy6 {
+    align-items: flex-start;
+    grid-column: 33 / 63;
+  }
+
+  #dummy7 {
+    align-items: flex-start;
+    grid-column: 66 / 91;
+  }
+
+  #dummy8 {
+    align-items: flex-start;
+    grid-column: 10 / 45;
+  }
+
+  #dummy9 {
+    align-items: flex-start;
+    grid-column: 50 / 70;
+  }
+
+  #dummy10 {
+    align-items: flex-start;
+    grid-column: 1 / 50;
+  }
+
+  #dummy11 {
+    align-items: flex-start;
+    grid-column: 60 / 97;
+  }
+
+  #dummy10 {
+    align-items: flex-start;
+    grid-column: 1 / 50;
+  }
+
+  #dummy11 {
+    align-items: flex-start;
+    grid-column: 60 / 97;
   }
 
   img {
@@ -205,6 +277,7 @@ li {
     padding: 5px 12px 3px 12px;
     border: 2px solid;
     border-radius: 5rem;
+    /* BUTTON VERKLEINING */
     font-family: "fakt-med";
     font-size: 1rem;
   }
@@ -274,7 +347,6 @@ li {
   }
 
   figcaption {
-    line-height: 1;
     display: flex;
     justify-content: space-between;
   }
@@ -378,7 +450,6 @@ li {
     color: white;
     font-family: "fakt-nor";
     font-size: 1rem;
-    line-height: 1.2rem;
   }
 
   .footer-container {
@@ -457,7 +528,19 @@ li {
   .navigation-container {
     font-family: "fakt-nor";
     font-size: 1.2rem;
-    line-height: 1.4rem;
+  }
+
+  .name-container {
+    font-size: 2.7rem;
+    letter-spacing: -1px;
+  }
+
+  .name-center {
+    margin-left: 0.2rem;
+    margin-right: -0.2rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid;
+    /* transition: width 4s; */
   }
 
   #button-radio {
@@ -468,24 +551,49 @@ li {
 
 @media only screen and (min-width: 640px) {
   #header-container {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 4%;
-    margin-right: 4%;
-    padding-top: 1.8rem;
-    padding-bottom: 0.6rem;
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+
+  .dummy-container {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+
+  .name-container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .navigation-container {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    padding-top: 0.6rem;
+    padding-bottom: 1.8rem;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
   }
 
-  .dummy-container {
-    margin-left: 4%;
-    margin-right: 4%;
+  .name-right {
+    display: block;
+  }
+
+  .targetDiv {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .navigation-text {
+    font-family: "fakt-nor";
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    text-align: left;
   }
 
   .main-container {
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 4vw;
+    margin-right: 4vw;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, auto);
     grid-template-areas:
@@ -495,44 +603,6 @@ li {
       "project7 project8"
       "project9 project10"
       "project11 project12"
-  }
-
-  .navigation-container {
-    margin-left: 4%;
-    margin-right: 4%;
-    padding-top: 0.6rem;
-    padding-bottom: 1.8rem;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-  }
-
-  .targetDiv {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-  }
-
-  .name-container {}
-
-  .name-right {
-    display: block;
-  }
-
-  .button {
-    background: none;
-    padding: 5px 14px 3px 14px;
-    border: 2px solid;
-    border-radius: 5rem;
-    font-family: "fakt-med";
-    font-size: 1.2rem;
-  }
-
-  .navigation-text {
-    column-count: 2;
-  }
-
-  .name-container {
-    width: 50%;
   }
 
   .follow-container {
@@ -551,8 +621,8 @@ li {
   .footer-container {
     display: grid;
     align-self: flex-start;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 4vw;
+    margin-right: 4vw;
     padding-top: 3.6rem;
     padding-bottom: 2.4rem;
     padding-left: 0.6rem;
@@ -577,6 +647,41 @@ li {
   }
 }
 
+@media only screen and (min-width: 960px) {
+  #header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1.8rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+
+  .name-container {
+    width: 50%;
+  }
+
+  #button-margin-header {
+    margin-top: 0rem;
+    margin-right: 0.45rem;
+  }
+
+  #button-radio {
+    display: block;
+    margin-top: 0rem;
+  }
+
+  .button {
+    background: none;
+    padding: 5px 14px 3px 14px;
+    border: 2px solid;
+    border-radius: 5rem;
+    /* BUTTON VERGROTING  */
+    font-family: "fakt-med";
+    font-size: 1.2rem;
+  }
+}
+
 @media only screen and (min-width: 1920px) {
   .name-container {
     width: 33%;
@@ -588,9 +693,5 @@ li {
     grid-template-areas:
       "project1 project2 project4"
       "project3 project5 project6"
-  }
-
-  .navigation-text {
-    column-count: 3;
   }
 }
