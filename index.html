@@ -30,12 +30,22 @@
   <meta name="og:description" project="[to fill in]" />
   <meta name="og:url" project="www.foundedbytwo.com" />
 
-  <link href="index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="splide/css/splide.min.css">
 
 </head>
 
 
 <body>
+
+  <script>
+    window.addEventListener('load', function() {
+      new Splide('.splide', {
+        autoWidth: true,
+        rewind: true,
+      }).mount();
+    });
+  </script>
 
   <header>
     <div class="location-container">
@@ -77,10 +87,32 @@
     </div>
 
     <div id="div2" class="targetDiv" style="display:none;">
-      <div class="navigation-container">
         <div class="navigation-dummy">
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy1.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy2.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy3.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy4.gif"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy5.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy6.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy7.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy8.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy9.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy11.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy13.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy14.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy15.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy16.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy17.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy18.jpg"></li>
+                <li class="splide__slide"><img style="height: 16rem" src="images/Dummy19.jpg"></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
+
     </div>
     <div id="div3" class="targetDiv" style="display:none;">
       <div class="navigation-container">
@@ -98,7 +130,7 @@
           </div>
         </div>
         <div id="navigation-subcontainer-2">
-          <div id="navigation-title-margin" class="navigation-title">
+          <div id="navigation-title-margin2" class="navigation-title">
             ↓ What we do
           </div>
           <div class="navigation-text">
@@ -112,14 +144,31 @@
     </div>
     <div id="div4" class="targetDiv" style="display:none;">
       <div class="navigation-container">
-        <div class="navigation-text">
-          Bloemstraat 11<br>
-          3014 KA, Rotterdam<br>
-          The Netherlands<br>
-          <br>
-          <a href="tel:+31641411115">Fabiola: <i>+31 644 132 028<br></i></a>
-          <a href="tel:+31644132028">Sjors: <i>+31 644 132 028<br></i></a>
-          <a href="mailto:info@foundedbytwo.com">Info@foundedbytwo.com<br></a>
+        <div id="navigation-subcontainer-1">
+          <div class="navigation-title">
+            ↓ Adress
+          </div>
+          <div class="navigation-text">
+            Bloemstraat 11<br>
+            3014 KA, Rotterdam<br>
+            The Netherlands<br>
+          </div>
+          <div id="navigation-title-margin1" class="navigation-title">
+            ↓ Phone & Mail
+          </div>
+          <div class="navigation-text">
+            <a href="tel:+31641411115">Fabiola: <i>+31 644 132 028<br></i></a>
+            <a href="tel:+31644132028">Sjors: <i>+31 644 132 028<br></i></a>
+            <a href="mailto:info@foundedbytwo.com">Info@foundedbytwo.com<br></a>
+          </div>
+        </div>
+        <div id="navigation-subcontainer-2">
+          <div id="navigation-title-margin2" class="navigation-title">
+            ↓ Socials
+          </div>
+          <div class="navigation-text">
+            Instagram, TikTok, Pinterest, Behance, LinkedIn, YouTube, Spotify
+          </div>
         </div>
       </div>
     </div>
@@ -238,12 +287,13 @@
     </div>
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+  <script src="splide/js/splide.min.js"></script>
+  <script src="index.js"></script>
+
 </body>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
-<script src="index.js"></script>
 
 
 </html>

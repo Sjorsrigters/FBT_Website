@@ -182,7 +182,11 @@ li {
     /* color: white; */
   }
 
-  #navigation-title-margin {
+  #navigation-title-margin1 {
+    padding-top: 1.8rem;
+  }
+
+  #navigation-title-margin2 {
     padding-top: 1.8rem;
   }
 
@@ -211,107 +215,13 @@ li {
 
   .navigation-dummy {
     width: 100vw;
-    margin-left: calc(-1rem);
-    background: black;
-    height: 24rem;
+    background: white;
+    margin-bottom: 1.8rem;
   }
 
-  .dummy-container {
-    display: grid;
-    margin-left: 4vw;
-    margin-right: 4vw;
-    margin-bottom: 3vw;
-    grid-template-columns: repeat(92, 1vw);
-    grid-template-rows: auto;
-  }
-
-  #margin-dummy {
-    height: 4vw;
-  }
-
-  #dummy1 {
-    align-items: flex-start;
-    grid-column: 1 / 30;
-  }
-
-  #dummy2 {
-    align-items: flex-start;
-    grid-column: 33 / 55;
-  }
-
-  #dummy3 {
-    align-items: flex-start;
-    grid-column: 66 / 97;
-  }
-
-  #dummy4 {
-    align-items: flex-start;
-    grid-column: 20 / 80;
-  }
-
-  #dummy5 {
-    align-items: flex-start;
-    grid-column: 1 / 24;
-  }
-
-  #dummy6 {
-    align-self: flex-end;
-    align-items: flex-start;
-    grid-column: 33 / 63;
-  }
-
-  #dummy7 {
-    align-items: flex-start;
-    grid-column: 48 / 91;
-  }
-
-  #dummy5 {
-    align-items: flex-start;
-    grid-column: 1 / 30;
-  }
-
-  #dummy6 {
-    align-items: flex-start;
-    grid-column: 33 / 63;
-  }
-
-  #dummy7 {
-    align-items: flex-start;
-    grid-column: 66 / 91;
-  }
-
-  #dummy8 {
-    align-items: flex-start;
-    grid-column: 10 / 45;
-  }
-
-  #dummy9 {
-    align-items: flex-start;
-    grid-column: 50 / 70;
-  }
-
-  #dummy10 {
-    align-items: flex-start;
-    grid-column: 1 / 50;
-  }
-
-  #dummy11 {
-    align-items: flex-start;
-    grid-column: 60 / 97;
-  }
-
-  #dummy10 {
-    align-items: flex-start;
-    grid-column: 1 / 50;
-  }
-
-  #dummy11 {
-    align-items: flex-start;
-    grid-column: 60 / 97;
-  }
 
   img {
-    width: 100%;
+    /* width: 100%; */
   }
 
   .button {
@@ -598,18 +508,6 @@ li {
     margin-right: 4vw;
   }
 
-  .navigation-dummy {
-    width: 102vw;
-    margin-left: calc(-4vw - 0.9rem);
-    background: black;
-    height: 24rem;
-  }
-
-  .dummy-container {
-    margin-left: 4vw;
-    margin-right: 4vw;
-  }
-
   .name-container {
     padding-left: 0rem;
     padding-right: 0rem;
@@ -746,7 +644,7 @@ li {
       "navigation-subcontainer-1 navigation-subcontainer-2"
   }
 
-  #navigation-title-margin {
+  #navigation-title-margin2 {
     padding-top: 0rem;
   }
 }
