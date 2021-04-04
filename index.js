@@ -2,7 +2,7 @@ $('.showSingle').click(function () {
     if ($(this).hasClass("button-active")) {
       $('.targetDiv').hide();
       $('.showSingle').removeClass('button-active');
-      $('#div1, #div5').show();
+      $('#div1').show();
     } else {
       $('.targetDiv').hide();
       $('.showSingle').removeClass('button-active');
@@ -18,7 +18,7 @@ $(document).ready(function() {
 });
 
 // $(document).ready(function() {
-// 			var colors = ["#aa5aff", "#75fa4c"];
+// 			var colors = ["#ffca00", "#75fa4c"];
 // 			var rand = Math.floor(Math.random() * colors.length);
 // 			$('header').css("background-color", colors[rand]);
 //       $('footer').css("background-color", colors[rand]);
