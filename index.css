@@ -219,9 +219,8 @@ li {
     margin-bottom: 1.8rem;
   }
 
-
-  img {
-    /* width: 100%; */
+  #navigation-dummy-height {
+    height: 18rem;
   }
 
   .button {
@@ -576,13 +575,13 @@ li {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     grid-gap: 1.2rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
-      "footer-text footer-text footer-image footer-image"
-      "footer-contact footer-contact footer-image footer-image"
-      "footer-adress footer-adress footer-image footer-image"
-      "footer-socials footer-socials footer-image footer-image"
+      "footer-text footer-image"
+      "footer-contact footer-image"
+      "footer-adress footer-image"
+      "footer-socials footer-socials"
   }
 
   .button-footer {
@@ -633,6 +632,10 @@ li {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
   }
+
+  #navigation-dummy-height {
+    height: 20rem;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -647,6 +650,16 @@ li {
   #navigation-title-margin2 {
     padding-top: 0rem;
   }
+
+  #navigation-dummy-height {
+    height: 24rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #navigation-dummy-height {
+    height: 30rem;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -654,7 +667,7 @@ li {
     width: 33%;
   }
 
-  /* .navigation-container {
+  .navigation-container {
     grid-gap: 1.8rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, auto);
@@ -664,14 +677,14 @@ li {
 
   #navigation-subcontainer-3 {
     grid-area: navigation-empty;
-  } */
+  }
 
   /* .navigation-text {
     width: 66%;
   } */
 
-  #navigation-text-columns {
-    column-count: 0;
+  #navigation-dummy-height {
+    height: 30rem;
   }
 
   .main-container {
@@ -680,5 +693,19 @@ li {
     grid-template-areas:
       "project1 project2 project4"
       "project3 project5 project6"
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      "footer-text footer-image footer-empty"
+      "footer-contact footer-image footer-empty"
+      "footer-adress footer-image footer-empty"
+      "footer-socials footer-socials footer-socials"
+  }
+
+  #navigation-subcontainer-3 {
+    grid-area: footer-empty;
   }
 }
