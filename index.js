@@ -12,9 +12,19 @@ $('.showSingle').click(function () {
 });
 
 $(document).ready(function() {
-			var colors = ["#aa5aff", "#fc5217"];
+			var colors = ['#aa5aff', '#fc5217'];
 			var rand = Math.floor(Math.random() * colors.length);
-			$('body').css("background-color", colors[rand]);
+			$('body').css('background-color', colors[rand]);
+      $('.follow-button').hover(function(){
+        $(this).css('color', colors[rand]);
+        }, function(){
+        $(this).css("color", 'black');
+      });
+      $('.button-footer').hover(function(){
+        $(this).css('color', colors[rand]);
+        }, function(){
+        $(this).css("color", 'white');
+      });
 });
 
 // $(document).ready(function() {

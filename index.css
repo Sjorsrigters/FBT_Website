@@ -190,6 +190,10 @@ li {
     padding-top: 1.8rem;
   }
 
+  #navigation-title-arrow {
+    padding-top: 7rem;
+  }
+
   .navigation-text {
     /* width: 75%; */
     font-family: "fakt-nor";
@@ -240,8 +244,6 @@ li {
   }
 
   button:focus {
-    color: white;
-    border-color: white;
     outline: 0;
   }
 
@@ -257,6 +259,18 @@ li {
   #button-margin-footer {
     margin-bottom: 0.6rem;
     margin-right: 0.6rem;
+  }
+
+  .button-text {
+    font-family: "fakt-nor-ita";
+  }
+
+  .button-text:hover {
+    color: white;
+  }
+
+  .italic {
+    font-family: "fakt-nor-ita";
   }
 
   .main-container {
@@ -394,14 +408,13 @@ li {
   }
 
   .follow-button:hover {
-    color: #dcdcdc;
   }
 
   footer {
     background: black;
     color: white;
     font-family: "fakt-nor";
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .footer-container {
@@ -467,12 +480,12 @@ li {
     font-family: "fakt-med";
     font-size: 1rem;
     color: white;
-    border-color: white;
   }
 
   .button-footer:hover {
-    color: #dcdcdc;
-    border-color: #dcdcdc;
+    /* background: white;
+    color: black;
+    border-color: white; */
   }
 }
 
@@ -636,9 +649,7 @@ li {
   #navigation-dummy-height {
     height: 20rem;
   }
-}
 
-@media only screen and (min-width: 1280px) {
   .navigation-container {
     grid-gap: 1.8rem;
     grid-template-columns: repeat(2, 1fr);
@@ -650,6 +661,10 @@ li {
   #navigation-title-margin2 {
     padding-top: 0rem;
   }
+}
+
+@media only screen and (min-width: 1280px) {
+
 
   #navigation-dummy-height {
     height: 24rem;
