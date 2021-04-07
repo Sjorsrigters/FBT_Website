@@ -25,6 +25,7 @@ $(document).ready(function() {
         }, function(){
         $(this).css("color", 'white');
       });
+      $('.navigation-title2').css('color', colors[rand]);
 });
 
 // $(document).ready(function() {
