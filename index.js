@@ -25,15 +25,8 @@ $(document).ready(function() {
         }, function(){
         $(this).css("color", 'white');
       });
-      $('.navigation-title2').css('color', colors[rand]);
+      $('.project-title').css('color', colors[rand]);
 });
-
-// $(document).ready(function() {
-// 			var colors = ["#ffca00", "#75fa4c"];
-// 			var rand = Math.floor(Math.random() * colors.length);
-// 			$('header').css("background-color", colors[rand]);
-//       $('footer').css("background-color", colors[rand]);
-// });
 
 var scale = Math.min(
   availableWidth / contentWidth,

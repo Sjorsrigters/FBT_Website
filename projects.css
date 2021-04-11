@@ -10,10 +10,13 @@ main {
 }
 
 @media only screen and (min-width: 1px) {
-  .navigation-title2 {
+  .project-title {
     font-family: "fakt-med";
-    font-size: 1.2rem;
-    /* line-height: 2.6rem; */
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    /* font-family: "fakt-nor";
+    font-size: 2.4rem;
+    line-height: 2.6rem; */
     text-align: left;
     padding-bottom: 0.6rem;
   }
