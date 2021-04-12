@@ -26,10 +26,15 @@ $(document).ready(function() {
         $(this).css("color", 'white');
       });
       $('.project-title').css('color', colors[rand]);
-      $('.project-buttons-container').hover(function(){
+      $('.button-project').hover(function(){
         $(this).css('color', colors[rand]);
         }, function(){
-        $(this).css("color", 'white');
+        $(this).css("color", 'black');
+      });
+      $('.project-text-italic').hover(function(){
+        $(this).css('color', colors[rand]);
+        }, function(){
+        $(this).css("color", 'black');
       });
 });
 
