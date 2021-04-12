@@ -13,9 +13,10 @@ main {
   .project-title {
     font-family: "fakt-nor";
     font-size: 2.4rem;
-    line-height: 2.6rem;
+    letter-spacing: -1px;
+    line-height: 2.4rem;
     text-align: left;
-    padding-top: 1.8rem;
+    padding-top: 1.2rem;
     padding-bottom: 0.9rem;
   }
 
@@ -93,6 +94,18 @@ main {
 
   #project-text-subcontainer-empty {
     grid-area: project-text-subcontainer-empty;
+  }
+
+  .button-project {
+    background: none;
+    margin: 2px;
+    margin-left: calc(0.3rem);
+    margin-right: calc(0.3rem);
+    padding: 5px 12px 3px 12px;
+    border: 2px solid;
+    border-radius: 5rem;
+    font-family: "fakt-med";
+    font-size: 1rem;
   }
 
   .project1-container {
@@ -215,6 +228,13 @@ main {
   }
 }
 
+@media only screen and (min-width: 375px) {
+  .project-title {
+    font-size: 2.7rem;
+    letter-spacing: -1px;
+  }
+}
+
 @media only screen and (min-width: 640px) {
   .projects-follow-container {
     display: flex;
@@ -229,10 +249,17 @@ main {
     text-align: center;
   }
 
+  .project-title {
+    font-family: "fakt-nor";
+    font-size: 2.7rem;
+    line-height: 2.6rem;
+    padding-top: 1.8rem;
+  }
+
   .project-text-container {
     margin-left: 4vw;
     margin-right: 4vw;
-    padding-bottom: 1.8rem;
+    padding-bottom: 2.4rem;
     padding-left: 0.9rem;
     padding-right: 0.9rem;
   }
@@ -306,6 +333,16 @@ main {
   #project-text-subcontainer {
     column-count: 2;
     column-gap: 1.8rem;
+  }
+
+  .button-project {
+    background: none;
+    padding: 5px 14px 3px 14px;
+    border: 2px solid;
+    border-radius: 5rem;
+    /* BUTTON VERGROTING  */
+    font-family: "fakt-med";
+    font-size: 1.2rem;
   }
 }
 
