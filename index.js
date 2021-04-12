@@ -26,6 +26,11 @@ $(document).ready(function() {
         $(this).css("color", 'white');
       });
       $('.project-title').css('color', colors[rand]);
+      $('.project-buttons-container').hover(function(){
+        $(this).css('color', colors[rand]);
+        }, function(){
+        $(this).css("color", 'white');
+      });
 });
 
 var scale = Math.min(
