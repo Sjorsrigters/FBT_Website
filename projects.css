@@ -225,11 +225,12 @@ main {
     padding-bottom: 1.2rem;
     grid-gap: 0.6rem;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas:
       "project-image-1"
       "project-image-2"
       "project-image-3"
+      "project-image-4"
   }
 
   #project-image-1 {
@@ -443,8 +444,8 @@ main {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
-      "project-image-1 project-image-1"
-      "project-image-2 project-image-3"
+      "project-image-1 project-image-2"
+      "project-image-3 project-image-4"
   }
 }
 
@@ -602,9 +603,10 @@ main {
     margin-right: 8vw;
     padding-bottom: 1.2rem;
     grid-gap: 4px;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(1, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas:
-      "project-image-2 project-image-1 project-image-3"
+      "project-image-1 project-image-2"
+      "project-image-3 project-image-4"
   }
 }

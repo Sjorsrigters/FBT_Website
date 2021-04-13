@@ -331,12 +331,12 @@ li {
   #dummy14 {
     align-self: end;
     justify-self: end;
-    grid-column: 65 / 93;
+    grid-column: 1 / 93;
   }
 
   #dummy15 {
     align-self: center;
-    justify-self: end;
+    justify-self: center;
     grid-column: 1 / 93;
   }
 
@@ -348,35 +348,23 @@ li {
 
   #dummy17 {
     align-self: start;
-    justify-self: center;
-    grid-column: 1 / 93;
-  }
-
-  #dummy18 {
-    align-self: end;
-    justify-self: start;
-    grid-column: 1 / 45;
-  }
-
-  #dummy19 {
-    align-self: start;
     justify-self: start;
     grid-column: 49 / 93;
   }
 
-  #dummy20 {
+  #dummy18 {
     align-self: end;
     justify-self: center;
     grid-column: 1 / 93;
   }
 
-  #dummy21 {
+  #dummy19 {
     align-self: end;
     justify-self: center;
     grid-column: 1 / 45;
   }
 
-  #dummy22 {
+  #dummy20 {
     align-self: end;
     justify-self: center;
     grid-column: 49 / 93;
@@ -849,35 +837,23 @@ li {
 
   #dummy17 {
     align-self: start;
-    justify-self: center;
+    justify-self: start;
     grid-column: 49 / 93;
   }
 
   #dummy18 {
     align-self: end;
     justify-self: start;
-    grid-column: 1 / 45;
-  }
-
-  #dummy19 {
-    align-self: start;
-    justify-self: start;
-    grid-column: 49 / 93;
-  }
-
-  #dummy20 {
-    align-self: end;
-    justify-self: start;
     grid-column: 1 / 29;
   }
 
-  #dummy21 {
+  #dummy19 {
     align-self: end;
     justify-self: start;
     grid-column: 33 / 61;
   }
 
-  #dummy22 {
+  #dummy20 {
     align-self: end;
     justify-self: start;
     grid-column: 65 / 93;
