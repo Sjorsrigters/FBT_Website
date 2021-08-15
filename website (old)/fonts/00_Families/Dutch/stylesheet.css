@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Dutch 801';
+    src: url('Dutch801BT-ItalicHeadline.woff2') format('woff2'),
+        url('Dutch801BT-ItalicHeadline.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dutch801 RmHd BT';
+    src: url('Dutch801BT-RomanHeadline.woff2') format('woff2'),
+        url('Dutch801BT-RomanHeadline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
