@@ -23,12 +23,6 @@
       "main-item-2 main-item-4"
       "main-item-3 main-item-4"
   }
-
-  .subhead {
-      font-size: var(--font-size-large);
-      padding-bottom: 15px;
-      padding-left: 15px;
-  }
 }
 
 @media only screen and (min-width: 568px) {
@@ -36,10 +30,6 @@
   .main-container {
     font-size: var(--font-size-large);
     line-height: var(--line-height-tight);
-  }
-
-  .subhead {
-    font-size: var(--font-size-small);
   }
 }
 
@@ -67,9 +57,5 @@
 
   .main-container {
     font-size: var(--font-size-extralarge);
-  }
-
-  .subhead {
-    font-size: var(--font-size-medium);
   }
 }
